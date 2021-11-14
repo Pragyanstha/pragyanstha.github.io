@@ -38,12 +38,15 @@ nav {
     li:nth-child(2){
       margin-left: 15%;
     }
+    
   }
 }
 
 .banner {
   background-image: url('../images/banner.png');
   background-size: 60%;
+  background-color:rgba(255, 255, 255, 0.336);
+  background-blend-mode:lighten;
   background-position: bottom left;
   background-repeat: no-repeat;
   display: flex;
@@ -54,7 +57,7 @@ nav {
   &_introduction {
     margin-left: 5rem;
     margin-top: -5rem;
-    width: 34rem;
+    width: 45rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -62,7 +65,7 @@ nav {
       background: linear-gradient(93.32deg, #4FA0FF 19.54%, rgba(118, 96, 255, 0.66) 72.47%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      font-size: 96px;
+      font-size: 10rem;
       font-weight: 600;
     }
 
@@ -71,8 +74,10 @@ nav {
       margin-top: 2rem;
       font-style: normal;
       font-weight: normal;
-      font-size: 24px;
+      font-size: 1.8rem;
       line-height: 43px;
     }
+
+
   }
 }

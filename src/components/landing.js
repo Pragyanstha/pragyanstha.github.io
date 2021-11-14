@@ -9,14 +9,17 @@ const landing = () => {
                     <li>Tech Blog</li>
                     <li>Projects</li>
                     <li>About</li>
-                    <li>SNS</li>
+                    <li></li>
                 </ul>
+    
             </nav>
             <div className="banner">
                 <div className="banner_introduction">
-                    <h1>Pragyan <br />&nbsp;&nbsp;&nbsp;Shrestha</h1>
+                    <h1>Pragyan <br />Shrestha</h1>
                     <p>
-                    I am a graduate student at University of Tsukuba. My research interests are in medical imaging and computer vision.
+                    Hi, I am a graduate student at University of Tsukuba. 
+                    My research interests are in medical imaging and computer vision.
+                    Thanks for visiting!
                     </p>
                 </div>
             </div>

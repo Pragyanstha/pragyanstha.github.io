@@ -2,6 +2,8 @@
 
 $font-stack: "Noto Sans", Helvetica, sans-serif;
 $primary-color: #333;
+$fa-linkedin: #0976b4;
+$fa-github:#211F1F;
 
 * {
   margin: 0px;
@@ -18,12 +20,21 @@ ul {
   list-style-type: none;
 }
 
-nav {
-  width: 100%;
+.wrapper {
+  background: linear-gradient(110.12deg, rgba(116, 114, 255, 0.1) -0.57%, rgba(78, 159, 255, 0.08) 100%);;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
+nav {
+  width: 60%;
+  margin: 0 auto;
   ul {
     display: flex;
-    justify-content:  center;
+    //justify-content:  center;
     column-gap: 1%;
     
     li { 
@@ -39,6 +50,9 @@ nav {
     li:nth-child(2){
       margin-left: 15%;
     }
+    li:nth-child(5){
+      margin-left: auto;
+    }
 
     .sns {
       
@@ -46,26 +60,31 @@ nav {
       padding: 2rem 1rem;
       text-align: center;
     }
+
+    .linkedin {
+      color: $fa-linkedin;
+    }
+    .github {
+      color: $fa-github
+    }
     
   }
 }
 
 .banner {
-  background-image: url('../images/banner.png');
-  background-size: 60%;
-  background-color:rgba(255, 255, 255, 0.336);
-  background-blend-mode:lighten;
-  background-position: bottom left;
-  background-repeat: no-repeat;
-  display: flex;
-  height:90vh;
 
-  justify-content: center;
+  width:60%;
+  margin: 0 auto;
+  display: flex;
+  flex: 1;
+  // height:90vh;
+
+  justify-content: left;
 
   &_introduction {
-    margin-left: 5rem;
-    margin-top: -5rem;
-    width: 26rem;
+    margin-left: 1rem;
+    //margin-top: -5rem;
+    width: 34rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -73,19 +92,52 @@ nav {
       background: linear-gradient(93.32deg, #4FA0FF 19.54%, rgba(118, 96, 255, 0.66) 72.47%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      font-size: 6rem;
+      font-size: 8rem;
       font-weight: 600;
+      line-height: 9rem;
     }
 
     p {
+      padding-left: 0.5rem;
       color: #F18EB8;
       margin-top: 2rem;
       font-style: normal;
       font-weight: normal;
-      font-size: 1.2rem;
+      font-size: 1.4rem;
       line-height: 1.8rem;
     }
 
+    h2 {
+      margin-top: -5rem;
+      margin-bottom: -1rem;
+      padding-left: 0.5rem;
+      color: #F870AA;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 2rem;
 
+    bold {
+      
+      font-size: 4rem;
+      }
+    }
+  }
+
+  &_profile {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+
+    &-pic {
+      width:40%;
+      margin-top: -5rem;
+      border-radius: 50%;
+    //   border: 1rem solid ;
+    //   border-image-slice: 1;
+    //   border-image-source: linear-gradient(93.32deg, #4FA0FF 19.54%, rgba(118, 96, 255, 0.66) 72.47%);
+    }
   }
 }
+

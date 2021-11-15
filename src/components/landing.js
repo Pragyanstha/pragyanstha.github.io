@@ -1,15 +1,20 @@
 import React from 'react';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedinIn, faInstagram } from "@fortawesome/free-brands-svg-icons";
+
 
 const landing = () => {
+    
     return (
         <div className="wrapper">
             <nav>
                 <ul>
                     <li>LOGO</li>
                     <li>Tech Blog</li>
-                    <li>Projects</li>
+                    <li>Publications</li>
                     <li>About</li>
-                    <li></li>
+                    <li className="sns"><FontAwesomeIcon icon={faLinkedinIn} /></li>
+                    <li className="sns"><FontAwesomeIcon icon={faInstagram} /></li>
                 </ul>
     
             </nav>

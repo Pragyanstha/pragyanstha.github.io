@@ -1,0 +1,26 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font: 100% $font-stack;
+    color: $primary-color;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+
+a {
+    text-decoration: none;
+}
+.wrapper {
+    background: linear-gradient(110.12deg, rgba(116, 114, 255, 0.1) -0.57%, rgba(78, 159, 255, 0.08) 100%);;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 7rem auto;
+  }
+

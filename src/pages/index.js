@@ -8,8 +8,8 @@ const IndexPage = () => {
   return (
 <div className="wrapper">
   <Navbar />
-    <div className="banner">
-        <div className="banner_introduction">
+    <div className="landing">
+        <div className="landing_introduction">
             <h2>
             <bold>Hi</bold>, I am
             </h2>
@@ -21,8 +21,8 @@ const IndexPage = () => {
             </p>
         </div>
 
-        <div className="banner_profile">
-            <img className="banner_profile-pic" src={ProfilePic}></img>
+        <div className="landing_profile">
+            <img className="landing_profile-pic" src={ProfilePic}></img>
         </div>
     </div>
 </div>

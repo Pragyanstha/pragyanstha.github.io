@@ -1,0 +1,9 @@
+@mixin mq($breakpoint: md) {
+    @media #{map-get($breakpoints, $breakpoint)} {
+      @content;
+    }
+  }
+
+@mixin wrapper-bg {
+  background: linear-gradient(110.12deg, rgba(116, 114, 255, 0.1) -0.57%, rgba(78, 159, 255, 0.08) 100%);
+}

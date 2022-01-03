@@ -1,17 +1,17 @@
 import React from 'react'
 
 import ProfilePic from "../images/profile_pic.jpg"
-import Navbar from '../components/Navbar';
+import Navbar from '../components/navbar';
 
 // markup
-const IndexPage = () => {
+const Home = () => {
   return (
-<div className="wrapper">
+<div className="wrapper home">
   <Navbar />
-    <div className="landing">
-        <div className="landing_introduction">
+    <div className="home__section">
+        <div className="home__section--introduction">
             <h2>
-            <bold>Hi</bold>, I am
+            <b>Hi</b>, I am
             </h2>
             <h1>Pragyan <br />Shrestha</h1>
             <p>
@@ -21,12 +21,12 @@ const IndexPage = () => {
             </p>
         </div>
 
-        <div className="landing_profile">
-            <img className="landing_profile-pic" src={ProfilePic}></img>
+        <div className="home__section--profile">
+            <img className="home__section--profile-pic" src={ProfilePic}></img>
         </div>
     </div>
 </div>
   )
 }
 
-export default IndexPage
+export default Home

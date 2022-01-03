@@ -1,0 +1,94 @@
+
+.navbar {
+    display: flex;
+    
+    @include mq(lg){
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    &__logo {
+        margin-left:1em;
+        padding: 2rem;
+            &-img{
+            width: 50px;
+            }
+        }
+
+    &__links {
+        display: flex;
+        flex-direction: column;
+        min-width:100vw;
+        min-height: calc(100vh - 90px);
+        position: absolute;
+        top:90px;
+        transform: translateX(100%);
+        transition: all 1s;
+        background-color: #F1F7FF;
+        li {
+            color: #5F5B5B;
+            font-style: normal;
+            font-weight: normal;
+            text-align: center;
+            
+            padding: 2rem;
+
+            font-size: 20px;
+            line-height: 43px; 
+        }
+
+        @include mq(lg){
+            background-color: transparent;
+            display: flex;
+            flex-direction: row;
+            min-width:auto;
+            min-height: auto;
+            top:0px;
+            transform: translateX(0%);
+            transition: none;
+            width: 100%;
+            position: static;
+            li { 
+                &:nth-child(1){
+                    margin-left: auto;
+                    }  
+                &:nth-child(3){
+                        margin-right: auto;
+                        }  
+                    
+                &:nth-child(4){
+                margin-left: auto;
+                }  
+            }
+        }
+
+        &--active {
+            transform: translateX(0%);
+            transition: all 1s;
+
+        }
+    }
+
+        .github {
+            font-size: 40px;
+            color: $fa-github;
+        }
+        .linkedin {
+            font-size: 40px;
+            color: $fa-linkedin;
+        }
+    
+    
+    &__hamburger{
+        display: block;
+        padding: 2rem;
+        margin-left: auto;
+        margin-right:1rem;
+        font-size:30px;
+          @include mq(lg)
+          {
+              display: none;
+          }
+        }
+    }
+

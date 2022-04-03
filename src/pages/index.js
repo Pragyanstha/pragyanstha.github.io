@@ -1,7 +1,7 @@
 import React from 'react'
 
 import ProfilePic from "../images/profile_pic.jpg"
-import Navbar from '../components/navbar';
+import Navbar from '../components/navbar.js';
 
 // markup
 const Home = () => {

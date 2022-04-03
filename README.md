@@ -1,5 +1,5 @@
-## 🚀 Quick start
+### Personal Website
 
-1. **Start developing**  
+Repo for my personal website.  
+Link is www.pragyanstha.com
 
-```npm start```

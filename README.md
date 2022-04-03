@@ -1,5 +1,5 @@
 ### Personal Website
 
-Repo for my personal website.  
+Welcome to the repo for my personal website.  
 Link is www.pragyanstha.com
 

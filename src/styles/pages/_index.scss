@@ -1,0 +1,117 @@
+
+.home {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 7rem auto;
+
+
+&__section {
+
+    grid-column: 1;
+    grid-row: 2;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    @include mq(lg)
+    {
+        width:60%;
+        margin: 0 auto;
+        flex-direction: row;
+        justify-content: left;
+    }
+
+    &--introduction {
+        order:2;
+        width: 90%;
+        margin: 0 1rem auto;
+        padding: 0 2rem;
+
+        @include mq(lg)
+        {
+            order: 1;
+            margin: 0;
+            //width: 34rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+            h2 {
+                font-style: normal;
+                font-weight: bold;
+                font-size: min(6vw, 3rem);
+                color: #F870AA;
+                margin-top: 1rem;
+                //margin-bottom: 1.5rem;
+                @include mq(lg)
+                {
+                    margin-top: -5vh;
+                    
+                    padding-left: 0.5rem;
+                }
+            }
+            h1 {
+                width:fit-content;
+                
+                font-size: min(8vw, 8rem);
+                font-weight: 600;
+                line-height: clamp(0.8rem, 8.8vw, 8rem);
+                background: linear-gradient(93.32deg, #4FA0FF 19.54%, rgba(118, 96, 255, 0.66) 72.47%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            p {
+                color: #F18EB8;
+                width:max(300px, 50vw);
+                font-style: normal;
+                font-weight: normal;
+                margin-top: 2rem;
+                font-style: normal;
+                font-weight: normal;
+                font-size: clamp(1rem,1em,1.8rem);
+                line-height: clamp(1.5rem, 3vw, 2rem);
+
+                @include mq(lg)
+                {
+                    width:80%;
+                    padding-left: 0.5rem;
+                    //margin-top: 3rem;
+                }
+            }
+
+        }    
+
+        &--profile {
+            order: 1;
+            padding:2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            @include mq(lg)
+            {
+                order: 2;
+                flex: 1;
+                align-items: center;
+            }
+        
+            &-pic {
+                width:clamp(150px, 30vw, 200px);
+                border-radius:  50%;
+                border: 10px solid #4E9FFF;
+
+                @include mq(lg){
+                    width:clamp(150px, 10vw, 300px);
+                    margin-top: -14vh;
+                }
+            }
+            }
+
+}
+
+
+}
+

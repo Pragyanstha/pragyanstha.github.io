@@ -1,0 +1,23 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font: 100% $font-stack;
+    color: $primary-color;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+
+a {
+    text-decoration: none;
+}
+.wrapper {
+    @include wrapper-bg;
+    min-height: 100vh;
+  }
+

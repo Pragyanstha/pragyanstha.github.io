@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkportfolio=self.webpackChunkportfolio||[]).push([[937],{1145:function(e,t,n){n.r(t),n.d(t,{default:function(){return l}});var a=n(7294),c=n(8192);function l(){return a.createElement("div",{className:"wrapper publications"},a.createElement(c.Z,null),a.createElement("div",{className:"publications__section"}))}}}]);
+//# sourceMappingURL=component---src-pages-publications-js-960f8731056fe94a8747.js.map

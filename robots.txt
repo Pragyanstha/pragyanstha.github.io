@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://pragyanstha.github.io/al-folio/sitemap.xml
+Sitemap: https://pragyanstha.github.io/sitemap.xml
